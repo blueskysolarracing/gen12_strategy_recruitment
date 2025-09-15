@@ -4,7 +4,11 @@ Your task is to write a simple race simulation that will output the optimal cons
 
 # Description of the World Solar Challenge
 
-The world solar challenge is a seven day event starting on October 22nd, 2023 and ending on October 28th, 2023. The race day begins at 9am and ends at 5pm from the second day (October 23rd) onwards. On the first day, the race day begins at 10am and ends at 6pm. During this time, the car is able to drive and make progress towards the finish line. Outside of race hours, the car can be charged in a stationary position as long as the sun is above the horizon. There are also 9 control stops at specific places throughout the race where you must stop for 30 minutes, allowing you to charge and check in with the race officials to ensure that you are staying on the route. The goal is to make it to the finish line in Adelaide as quickly as possible.
+- Seven day event starting on October 22nd, 2023 and ending on October 28th, 2023
+- Race days mark the official hours during the day when cars are allowed to drive toward the finish line. On the first day (October 22nd, 2023), the race day begins at 10am and ends at 6pm. From the second day (October 23rd, 2023) onwards, the race day spans from 9am to 5pm.
+- Outside of race hours, the car can be charged in a stationary position as long as the sun is above the horizon.
+- There are 9 control stops at specific places throughout the race where you must stop for 30 minutes, allowing the car to charge and check in with race officials.
+- The goal is to make it to the finish line in Adelaide as quickly as possible.
 
 # Your Task
 

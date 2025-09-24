@@ -42,32 +42,39 @@ The `main.cpp` file is the entry point of your program. It loads in the series o
 
 You will have to take a read through the code to understand how it interacts before beginning your implementation. The instructions are kept vague to encourage you to think critically about your implementation. I recommend starting with the Car class and specifically listing out the equations that will model energy losses and energy gains.
 
-# Toolchain
+# Toolchain and Build
 
-The below download are for those who don't already have the necessary dependencies for this project (CMake, git, make, gcc). If you already have those, you can ignore the stuff below
+This section is for those who do not already have the necessary dependencies for this project (CMake, git, make, gcc). If you already have these applications instealled, you can skip to the next section.
 
-## Getting a Windows Compiler
-- Download Git (https://git-scm.com/downloads/win) which will also install the git bash terminal
-- Download CMake windows installer (https://cmake.org/download/)
-- Download Msys2 (https://www.msys2.org/)
-- Follow the instructions on the Msys2 home page with the following modifications to the steps:
-  - In step 5, instead of launching the UCRT64 environment which has proven to be buggy, use the MinGW64 environment. You can find this as one of the applications in the downloaded msys2/ folder.
-  - In step 6, run `pacman -S mingw-w64-x86_64-gcc` inside the MinGW64 terminal. Then install `make` with `pacman -S mingw-w64-x86_64-make` inside the same MinGW64 terminal. After installing make, re-name the ```mingw32-make``` file in msys2/mingw64/bin to ```make```.
-- Add the absolute path to msys2/mingw64/bin to your PATH environment variable
-- Open git bash and ensure that ```make --version``` ```gcc --version``` run without error. If you get a command not found error. 
+## Windows
+The recommended toolchain for Windows is MSVC, but any other toolchain will also work fine e.g. Mingw, Clang/LLVM
+1. Download Visual Studio from https://visualstudio.microsoft.com/downloads/ and download the "Desktop Development with C++" package after launching the installer
 
-## Getting a Linux Compiler
-- sudo apt-get install build-essential gdb cmake
+From the installed x64 Native Tools Command Prompt for VS 2022 terminal:
+```
+cd <path to your cloned repostiory>
+mkdir build
+cmake -S . -B build -G "Ninja"
+cmake --build build
+```
 
-# Build
+## Linux
+`sudo apt-get install build-essential gdb cmake`
 
-Run these from a terminal
+From a terminal:
 
-- mkdir build
-- cd build
-- cmake ..
-- make
-- ./sim.exe [relative baseroute.csv location] [relative dni.csv location]
+```
+cd <path to your cloned repository>/build
+mkdir build
+cd build
+cmake ..
+make
+```
+# Run
+From the build directory:
+```
+./sim.exe [relative baseroute.csv location] [relative dni.csv location]
+```
 
 After building for the first time with nothing written, you should get the output:
 ```

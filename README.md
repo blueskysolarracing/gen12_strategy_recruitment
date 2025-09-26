@@ -48,7 +48,8 @@ This section is for those who do not already have the necessary dependencies for
 
 ## Windows
 The recommended toolchain for Windows is MSVC, but any other toolchain will also work fine e.g. Mingw, Clang/LLVM
-1. Download Visual Studio from https://visualstudio.microsoft.com/downloads/ and download the "Desktop Development with C++" package after launching the installer
+1. Download git https://git-scm.com/downloads/win and clone this repository
+2. Download Visual Studio from https://visualstudio.microsoft.com/downloads/ and download the "Desktop Development with C++" package after launching the installer
 
 From the installed x64 Native Tools Command Prompt for VS 2022 terminal:
 ```
